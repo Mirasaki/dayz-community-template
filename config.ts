@@ -1,4 +1,4 @@
-import { Config } from './src/lib/config.types';
+import type { Config } from './src/lib/config.types';
 
 export const config: Config = {
   runtime: 'nodejs',

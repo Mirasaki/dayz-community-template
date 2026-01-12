@@ -27,6 +27,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
+*.envrc*
 
 # vercel
 .vercel
@@ -37,3 +38,6 @@ next-env.d.ts
 
 # Turbo
 .turbo
+
+# script output
+/tw-dr.css

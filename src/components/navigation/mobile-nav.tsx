@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {
   Drawer,
   DrawerClose,
@@ -10,7 +8,7 @@ import {
 import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { HeaderProps, defaultNavigation } from './animated-header';
+import { type HeaderProps, defaultNavigation } from './animated-header';
 import { MenuIcon, XIcon } from 'lucide-react';
 import LinkButton from '../buttons/link-button';
 import Image from 'next/image';
@@ -55,7 +53,7 @@ const MobileNav = ({
               />
             </div>
             <div className={cn(
-              'flex flex-col gap-4 flex-grow h-max',
+              'flex flex-col gap-4 grow h-max',
               'p-4 border-t border-muted',
             )}>
                 {items.map((item, index) => (

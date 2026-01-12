@@ -1,5 +1,4 @@
 import { cn } from '@/lib/utils';
-import React from 'react';
 
 // FULL CREDIT TO https://codepen.io/tinystride/pen/nKbPOm
 

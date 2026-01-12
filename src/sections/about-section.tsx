@@ -1,7 +1,6 @@
 'use client';
 
 import { cn } from '@/lib/utils';
-import React from 'react';
 import { config } from '../../config';
 import SpotlightBackgroundContent from '@/components/spotlight/spotlight-bg-content';
 import AboutRow from '@/components/about/about-row';

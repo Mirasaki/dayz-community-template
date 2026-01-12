@@ -10,7 +10,7 @@ import {
 import Image from 'next/image';
 import { useEffect } from "react";
 import { config } from '../../../config';
-import { NavItem } from '@/lib/types';
+import type { NavItem } from '@/lib/types';
 import Link from 'next/link';
 import MobileNav from './mobile-nav';
 import { cn } from '@/lib/utils';
@@ -91,7 +91,7 @@ export default function Header({
             [3, 1]
           ),
         }}
-        className={`fixed inset-x-0 flex h-20 shadow backdrop-blur-md duration-300`}
+        className={`fixed inset-x-0 flex h-20 shadow-sm backdrop-blur-md duration-300`}
       >
         <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-8">
           <motion.div

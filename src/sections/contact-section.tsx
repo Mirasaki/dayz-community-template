@@ -1,7 +1,6 @@
 'use client';
 
 import { cn } from '@/lib/utils';
-import React from 'react';
 import { config } from '../../config';
 import LinkButton from '@/components/buttons/link-button';
 

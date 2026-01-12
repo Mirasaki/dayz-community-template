@@ -2,7 +2,7 @@
 
 import { cn } from '@/lib/utils';
 import { motion, useMotionTemplate, useMotionValue } from 'framer-motion';
-import React, { MouseEvent } from 'react';
+import React, { type MouseEvent } from 'react';
 
 export default function SpotlightBackgroundContent({
   color = 'rgba(14, 165, 233, 0.1)',

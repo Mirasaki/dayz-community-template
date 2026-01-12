@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { config } from '../../../config';
 import { cn } from '@/lib/utils';
 import { motion, useScroll, useTransform } from 'framer-motion';
@@ -13,12 +13,12 @@ const MainHero = () => {
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
   return (<div className='relative w-full'>
-    <div className='absolute inset-0 z-0 bg-gradient-to-b from-[transparent,75%] to-black' />
+    <div className='absolute inset-0 z-0 bg-linear-to-b from-[transparent,75%] to-black' />
     <motion.section
       ref={ref}
       className={cn(
         "bg-blend-multiply bg-no-repeat bg-center w-full",
-        "flex items-center min-h-[100lvh]",
+        "flex items-center min-h-lvh",
         'pt-20', // Note: Uses padding because Gutter isn't used for the header in root layout
       )}
       style={{
@@ -30,9 +30,9 @@ const MainHero = () => {
         backgroundSize: 'cover',
       }}
     >
-      <div className='relative py-8 px-4 mx-auto max-w-screen-2xl text-white lg:py-16 z-1'>
-        <div className='mb-6 max-w-screen-lg lg:mb-0 flex flex-col items-center text-center'>
-          <div className='h-[75px] w-[75px]'>
+      <div className='relative py-8 px-4 mx-auto max-w-(--breakpoint-2xl) text-white lg:py-16 z-1'>
+        <div className='mb-6 max-w-(--breakpoint-lg) lg:mb-0 flex flex-col items-center text-center'>
+          <div className='h-18.75 w-18.75'>
             <Image
               src='/images/logos/dayz.png'
               alt='Hero Image'
@@ -54,7 +54,7 @@ const MainHero = () => {
           </p>
           <LinkButton
             href={config.hero.cta.href}
-            className='inline-flex items-center py-3 px-5 font-medium text-center rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-900 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'
+            className='inline-flex items-center py-3 px-5 font-medium text-center rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-hidden focus:ring-primary-900 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'
           >
             <ExternalLinkIcon className='w-5 h-5 pr-1' />
             {config.hero.cta.label}

@@ -1,4 +1,4 @@
-import { LeaderboardEntry } from '@/lib/cftools';
+import type { LeaderboardEntry } from '@/lib/cftools';
 import {
   Table,
   TableBody,
@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/table';
 import { config } from '../../../config';
 import { titleCase } from '@/lib/utils';
-import { LeaderboardSortValues } from '../../lib/config.types';
+import type { LeaderboardSortValues } from '../../lib/config.types';
 
 const hitsCoefficient = 0.15;
 const killsCoefficient = 1.35;

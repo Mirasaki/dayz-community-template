@@ -1,4 +1,3 @@
-import React from 'react';
 import { config } from '../../../config';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -6,7 +5,7 @@ import Image from 'next/image';
 const Footer = () => {
   return (
     <footer className='pb-2 px-4 md:px-8 pt-4 md:pt-8 bg-white dark:bg-gray-800'>
-      <div className='mx-auto max-w-screen-xl text-center'>
+      <div className='mx-auto max-w-(--breakpoint-xl) text-center'>
         <Link
           href={config.footer.brandingURL ?? '#'}
           className='flex justify-center items-center gap-2 text-2xl font-semibold text-gray-900 dark:text-white'

@@ -41,7 +41,7 @@ export const ServerCard = async ({
 
   try {
     const res = await fetch(`https://api.steampowered.com/IGameServersService/GetServerList/v1/?key=${process.env.STEAM_API_KEY}&filter=addr\\${server.ipv4}:${server.steamQueryPort}`, {
-      cache: 'no-cache',
+      next: { revalidate: 60 },
     });
     data = await res.json();
   }
@@ -57,7 +57,7 @@ export const ServerCard = async ({
 
   const serverData = data?.response?.servers?.[0] as ServerResponseItem | undefined;
 
-  if (!serverData) data.error = 'No servers found with that IP address + port. Server is offline, or the Steam API is down.';
+  if (!serverData) data.error = 'No servers found for configured IP address + port. Server is offline, or the Steam API is down.';
 
   return (
     <div className={cn(

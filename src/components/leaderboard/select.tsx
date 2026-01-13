@@ -1,7 +1,5 @@
 'use client';
 
-import React from "react";
-
 import {
   Select,
   SelectContent,
@@ -12,7 +10,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { titleCase } from '@/lib/utils';
-import { LeaderboardSortValues } from '../../lib/config.types';
+import type { LeaderboardSortValues } from '../../lib/config.types';
 import { config } from '../../../config';
 
 export type LeaderboardSelectProps = {
@@ -30,7 +28,7 @@ const LeaderboardSelect = ({
     <Select defaultValue={defaultValue} onValueChange={(e) => {
       if (onChange) onChange(e);
     }}>
-      <SelectTrigger className="w-[180px]">
+      <SelectTrigger className="w-45">
         <SelectValue placeholder="Select a server" />
       </SelectTrigger>
       <SelectContent>
@@ -58,7 +56,7 @@ export const LeaderboardSelectSortBy = ({
     <Select defaultValue={defaultValue} onValueChange={(e) => {
       if (onChange) onChange(e as LeaderboardSortValues);
     }}>
-      <SelectTrigger className="w-[140px]">
+      <SelectTrigger className="w-35">
         <SelectValue placeholder="Sort by" />
       </SelectTrigger>
       <SelectContent>

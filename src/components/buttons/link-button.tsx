@@ -1,6 +1,6 @@
 import React from 'react';
-import { ButtonProps, buttonVariants } from '../ui/button';
-import Link, { LinkProps } from 'next/link';
+import { type ButtonProps, buttonVariants } from '../ui/button';
+import Link, { type LinkProps } from 'next/link';
 
 export type LinkButtonProps = {
   children?: React.ReactNode;

@@ -7,7 +7,7 @@ import { ThemeProvider } from '@/components/theme/theme-provider';
 import Header from '@/components/navigation/animated-header';
 import Footer from '@/components/footer/footer';
 
-export const runtime = config.runtime;
+export const runtime = 'nodejs';
 
 export const viewport: Viewport = {
   themeColor: config.themeColor,
@@ -70,7 +70,7 @@ export default function RootLayout({
           <div className="flex min-h-screen flex-col">
             <div id="anchor-top" aria-hidden />
             <Header />
-            <div className="flex flex-1 flex-grow items-center justify-center relative">
+            <div className="flex flex-1 grow items-center justify-center relative">
               {children}
             </div>
             <Footer />

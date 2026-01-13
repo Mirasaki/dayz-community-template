@@ -6,7 +6,7 @@ import { config } from '../../config';
 import LeaderboardSelect, { LeaderboardSelectSortBy } from '@/components/leaderboard/select';
 import LeaderboardTable from '@/components/leaderboard/table';
 import BackgroundElements from '@/components/backgrounds/background-elements';
-import { LeaderboardEntry } from '@/lib/cftools';
+import { type LeaderboardEntry } from '@/lib/cftools';
 
 const LeaderboardSection = ({ data: _data, error }: {
   data: {

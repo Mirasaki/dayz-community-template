@@ -1,4 +1,4 @@
-import { NavItem } from '@/lib/types';
+import type { NavItem } from '@/lib/types';
 
 export type Config = {
   /**
@@ -6,6 +6,15 @@ export type Config = {
    * will run, and can affect the performance and capabilities of the app. If
    * you're hosted on a server, you should use `nodejs`. If you're hosted on a
    * serverless platform, you should use `edge`.
+   * 
+   * @deprecated No longer supported as a dynamic config value. Instead, it needs to
+   * be provided as a static export in the `src/app/layout.tsx` file. For example:
+   * ```ts
+   * export const runtime = 'nodejs';
+   * ```
+   * This value remains as part of the config type to prevent build errors in
+   * existing projects that may be using it. With certain typescript settings,
+   * additional/unknown properties in objects can cause type errors.
    */
   runtime: 'nodejs' | 'edge';
   /**

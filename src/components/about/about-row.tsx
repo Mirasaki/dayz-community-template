@@ -1,6 +1,5 @@
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
-import React from "react";
 
 const AboutRow = ({
   title,
@@ -19,12 +18,12 @@ const AboutRow = ({
 }) => {
   return (
     <div className={cn(
-      'gap-8 py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 sm:py-16 lg:px-6',
+      'gap-8 py-8 px-4 mx-auto max-w-(--breakpoint-xl) xl:gap-16 sm:py-16 lg:px-6',
       'flex items-center justify-center flex-col-reverse md:flex-row',
       className
     )}>
       <Image
-        className='max-w-[500px] w-full rounded'
+        className='max-w-125 w-full rounded'
         src={imageURL}
         alt={imageAlt}
         height={200}

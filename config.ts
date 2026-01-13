@@ -1,12 +1,12 @@
-import { Config } from './src/lib/config.types';
+import type { Config } from './src/lib/config.types';
 
 export const config: Config = {
   runtime: 'nodejs',
-  themeColor: "#5789f6",
+  themeColor: "#821F14",
   logoURL: "/images/logo.png",
   site: {
-    url: "https://www.skvad.eu/",
-    title: "SKVAD Community",
+    url: "https://www.warzdayz.com",
+    title: "WarZ DayZ",
     twitter: {
       site: "@site",
       creator: "@creator",
@@ -14,15 +14,15 @@ export const config: Config = {
       images: [
         {
           url: "/images/marketing/banner.png",
-          alt: "Marketing Banner for SKVAD Community",
+          alt: "Marketing Banner for WarZ DayZ",
         },
       ],
     },
   },
   pages: {
     home: {
-      title: "Home | SKVAD Community",
-      description: "Welcome to the SKVAD Community! We are a DayZ community that is dedicated to providing the best experience for our players. Join us today!",
+      title: "Home | WarZ DayZ",
+      description: "WarZ is a modded project that takes DayZ into the modern era with modern rifles, fast-paced action, and high rewards, while maintaining much of its original flair.",
       sections: {
         network: {
           title: "Server Network",
@@ -36,7 +36,7 @@ export const config: Config = {
               title: "Events",
               description: "We host regular events and competitions for our players to participate in. These events are a great way to meet new people and have fun in the game.",
               image: {
-                url: "/images/about/events.jpg",
+                url: "/images/about/events.png",
                 alt: "Events Image",
               },
             },
@@ -44,7 +44,7 @@ export const config: Config = {
               title: "Community",
               description: "We believe that a strong community is the key to a successful server. We work hard to foster a positive and inclusive community for all players.",
               image: {
-                url: "/images/about/community.jpg",
+                url: "/images/about/community.png",
                 alt: "Community Image",
               },
             },
@@ -66,8 +66,8 @@ export const config: Config = {
           title: "Contact Us",
           description: "If you have any questions or concerns, please don't hesitate to contact us through the following channels.",
           links: {
-            'Discord': "https://discord.gg/skvad",
-            'Email': "mailto:info@skvad.eu",
+            'Discord': "https://discord.gg/warzdayz",
+            'Email': "mailto:admin@warzdayz.com",
           },
         },
       },
@@ -77,7 +77,7 @@ export const config: Config = {
     title: "We listen, we learn, we deliver.",
     description: "Our DayZ Community is built on the principles of transparency, integrity, and trust. We are committed to providing the best experience for our players. Wether you are a seasoned veteran or a new player, we have a place for you.",
     background: {
-      color: 'rgb(51 65 85)',
+      color: 'rgb(21, 21, 21)',
       image: {
         url: "/images/hero.jpg",
         alt: "Hero Image",
@@ -85,31 +85,38 @@ export const config: Config = {
     },
     cta: {
       label: "Join us today!",
-      href: "https://discord.gg/mirasaki",
+      href: "https://discord.gg/warzdayz",
     },
   },
   servers: [
     {
-      name: 'SKVAD EU1',
-      ipv4: '193.25.252.92',
-      gamePort: 2302,
-      steamQueryPort: 27016,
-      cftoolsApiId: '7732f152-3b6b-4da5-9356-b43ebfef2012',
-    },
-    {
-      name: 'SKVAD EU2',
-      ipv4: '193.25.252.24',
-      gamePort: 2302,
-      steamQueryPort: 27016,
-      cftoolsApiId: '40dfcdf1-2e38-4a86-8b36-f02e4c868bf5',
-    },
-    {
-      name: 'SKVAD EU3',
-      ipv4: '193.25.252.24',
+      name: 'WarZ 3PP',
+      ipv4: '95.156.230.61',
       gamePort: 2402,
       steamQueryPort: 27017,
-      cftoolsApiId: '16c3c8d1-9e15-4729-a541-8a578288e43d',
+      cftoolsApiId: '1519aeef-ac60-4d87-8c05-f607d6d68e4a',
     },
+    {
+      name: 'WarZ 1PP',
+      ipv4: '95.156.230.61',
+      gamePort: 2502,
+      steamQueryPort: 27018,
+      cftoolsApiId: '722ab0c9-fdb3-4812-9516-25cc552d3c35',
+    },
+    {
+      name: 'WarZ Deathmatch',
+      ipv4: '109.230.227.167',
+      gamePort: 2902 ,
+      steamQueryPort: 27022,
+      cftoolsApiId: '3d168194-9da7-4810-8675-4ac8ff02b8a7',
+    },
+    {
+      name: 'WarZ Training',
+      ipv4: '109.230.227.167',
+      gamePort: 3002,
+      steamQueryPort: 27023,
+      cftoolsApiId: 'a07fff87-b842-4d6e-968b-8d83a28d5a72',
+    }
   ],
   cftools: {
     leaderboard: {
@@ -121,11 +128,11 @@ export const config: Config = {
     },
   },
   footer: {
-    trademarkNotice: "The DayZ logo is a registered trademark of Bohemia Interactive a.s. SKVAD is not affiliated with Bohemia Interactive a.s. or DayZ. All other trademarks are the property of their respective owners.",
-    brandingName: "SKVAD Community",
+    trademarkNotice: "WarZ DayZ operates monetized servers authorized by Bohemia Interactive, in accordance with the DayZ monetization policy. All rights to DayZ, including trademarks and game content, are owned by Bohemia Interactive a.s. ",
+    brandingName: "WarZ DayZ",
     brandingURL: '/',
-    initialCopyrightYear: 2021,
-    copyrightBrandName: "SKVAD",
+    initialCopyrightYear: 2026,
+    copyrightBrandName: "WarZ DayZ",
     copyrightBrandUrl: '/',
     links: [
       {

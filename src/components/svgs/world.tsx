@@ -1,12 +1,11 @@
 import { cn } from '@/lib/utils';
-import React from 'react';
 
 // FULL CREDIT TO https://codepen.io/tinystride/pen/nKbPOm
 
 const WorldSVG = ({
   className,
-  primaryColor = '#0F354F',
-  animateValues = '#0e3049;#134770;#0e3049',
+  primaryColor = 'hsl(var(--primary))',
+  animateValues = 'hsl(var(--primary) / 0.5);hsl(var(--primary) / 0.8);hsl(var(--primary) / 0.5)',
   // animateValues = `${primaryColor}/05;${primaryColor}/75;${primaryColor}/50`,
 }: {
   className?: string;

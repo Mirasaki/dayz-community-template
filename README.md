@@ -2,6 +2,8 @@
 
 This is an easy to customize, forever-free template to bring an online presence to your (DayZ) gaming community. While initially intended to be used for DayZ communities, all DayZ specific elements can be easily disabled - making this template ideal for any gaming community.
 
+> ⚠️ **IMPORTANT:** This project is being recreated from scratch and will be significantly updated soon. Please check back for major improvements and new features.
+
 > 😎 Have any questions or just want to chill/have a chat? Come join our [support server](https://discord.gg/mirasaki).
 
 ## ✨ Demo

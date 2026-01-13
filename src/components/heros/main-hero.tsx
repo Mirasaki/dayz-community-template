@@ -17,9 +17,10 @@ const MainHero = () => {
     <motion.section
       ref={ref}
       className={cn(
-        "bg-blend-multiply bg-no-repeat bg-center w-full",
+        "bg-no-repeat bg-center w-full relative",
         "flex items-center min-h-lvh",
         'pt-20', // Note: Uses padding because Gutter isn't used for the header in root layout
+        "before:absolute before:inset-0 before:bg-black/75 before:z-10"
       )}
       style={{
         // Note: Only has parallax on larger widths due to implementation (cover vs contain)
@@ -30,7 +31,7 @@ const MainHero = () => {
         backgroundSize: 'cover',
       }}
     >
-      <div className='relative py-8 px-4 mx-auto max-w-(--breakpoint-2xl) text-white lg:py-16 z-1'>
+      <div className='relative py-8 px-4 mx-auto max-w-(--breakpoint-2xl) text-white lg:py-16 z-20'>
         <div className='mb-6 max-w-(--breakpoint-lg) lg:mb-0 flex flex-col items-center text-center'>
           <div className='h-18.75 w-18.75'>
             <Image
@@ -54,7 +55,7 @@ const MainHero = () => {
           </p>
           <LinkButton
             href={config.hero.cta.href}
-            className='inline-flex items-center py-3 px-5 font-medium text-center rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-hidden focus:ring-primary-900 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'
+            className='inline-flex items-center py-3 px-5 font-medium text-center rounded-lg bg-primary hover:bg-primary/90 focus:ring-4 focus:outline-hidden focus:ring-primary dark:bg-primary dark:hover:bg-primary/80 dark:focus:ring-primary'
           >
             <ExternalLinkIcon className='w-5 h-5 pr-1' />
             {config.hero.cta.label}

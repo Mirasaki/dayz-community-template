@@ -50,14 +50,14 @@ const LeaderboardTable = ({
       </TableCaption>
       <TableHeader className='sticky top-0 bg-background'>
         <TableRow>
-          <TableHead className='w-[100px]'>Name</TableHead>
+          <TableHead className='w-25'>Name</TableHead>
           <TableHead>Rank</TableHead>
           <TableHead>Activity Score</TableHead>
           <TableHead className='text-right'>
             {displayStat === 'kdratio' ? 'K/D Ratio' : titleCase(displayStat)}
           </TableHead>
         </TableRow>
-        <tr className='w-full h-[2px] bg-border absolute bottom-0' />
+        <tr className='w-full h-0.5 bg-border absolute bottom-0' />
       </TableHeader>
       <TableBody>
         {data.map((player, ind) => {
@@ -76,7 +76,7 @@ const LeaderboardTable = ({
           );
         })}
       </TableBody>
-      <TableFooter className='sticky bottom-0 bg-slate-800'>
+      <TableFooter className='sticky bottom-0 bg-background'>
         <TableRow>
           <TableCell colSpan={3}>Total</TableCell>
           <TableCell className='text-right'>

@@ -30,7 +30,7 @@ const MobileNav = ({
       </div>
 
       <DrawerContent hideBar className={cn(
-        'bg-background dark:bg-slate-950',
+        'bg-background dark:bg-primary/10 dark:backdrop-blur-3xl',
       )}>
         <ScrollArea className='h-screen'>
           <div className='container'>

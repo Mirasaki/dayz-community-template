@@ -8,7 +8,7 @@ const ContactSection = () => {
   return (
     <section
       className={cn(
-        'py-8 md:py-16 lg:py-28 px-1 sm:px-2 md:px-4 w-full bg-[#050505]',
+        'py-8 md:py-16 lg:py-28 px-1 sm:px-2 md:px-4 w-full bg-background',
         'relative z-10 overflow-hidden',
         'flex flex-col'
       )}

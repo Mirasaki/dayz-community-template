@@ -1,5 +1,5 @@
 import { config } from '../../config';
-import { LeaderboardSortValues } from './config.types';
+import type { LeaderboardSortValues } from './config.types';
 
 export const CFTOOLS_API_URL = 'https://data.cftools.cloud/v1';
 export const APPLICATION_JSON = 'application/json';

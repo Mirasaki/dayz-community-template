@@ -10,7 +10,7 @@ import {
 import Image from 'next/image';
 import { useEffect } from "react";
 import { config } from '../../../config';
-import { NavItem } from '@/lib/types';
+import type { NavItem } from '@/lib/types';
 import Link from 'next/link';
 import MobileNav from './mobile-nav';
 import { cn } from '@/lib/utils';
@@ -79,7 +79,7 @@ export default function Header({
             [0, 1],
             [80, 50]
           ),
-          backgroundColor: useMotionTemplate`rgb(2 6 23 / ${useTransform(
+          backgroundColor: useMotionTemplate`hsl(var(--background) / ${useTransform(
             scrollYBoundedProgressDelayed,
             [0, 1],
             [1, 0.1]
@@ -91,7 +91,7 @@ export default function Header({
             [3, 1]
           ),
         }}
-        className={`fixed inset-x-0 flex h-20 shadow backdrop-blur-md duration-300`}
+        className={`fixed inset-x-0 flex h-20 shadow-sm backdrop-blur-md duration-300`}
       >
         <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-8">
           <motion.div
@@ -99,7 +99,7 @@ export default function Header({
               scale: useTransform(
                 scrollYBoundedProgressDelayed,
                 [0, 1],
-                [1, 0.9]
+                [1, 0.75]
               ),
             }}
             className="flex origin-left items-center text-xl font-semibold uppercase duration-300"
@@ -108,8 +108,8 @@ export default function Header({
               <Image
                 src={config.logoURL}
                 alt="Logo"
-                width={80}
-                height={80}
+                width={60}
+                height={60}
                 priority
                 onDragStart={(e) => e.preventDefault()}
               />
@@ -123,7 +123,7 @@ export default function Header({
                 [1, 0]
               ),
             }}
-            className="hidden sm:flex space-x-4 text-sm font-medium text-slate-400 duration-300"
+            className="hidden sm:flex space-x-4 text-sm font-medium text-muted-foreground duration-300"
           >
             {items.map((item, index) => (
               <Link key={index} href={item.href} className='font-bold hover:text-primary duration-300'>

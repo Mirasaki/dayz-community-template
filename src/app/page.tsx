@@ -2,7 +2,7 @@ import MainHero from '@/components/heros/main-hero';
 import AboutSection from '@/sections/about-section';
 import ServerNetworkSection from '@/sections/server-network-section';
 import { config } from '../../config';
-import { LeaderboardEntry, getServerLeaderboards } from '@/lib/cftools';
+import { type LeaderboardEntry, getServerLeaderboards } from '@/lib/cftools';
 import ContactSection from '@/sections/contact-section';
 import LeaderboardSection from '@/sections/leaderboard-section';
 
